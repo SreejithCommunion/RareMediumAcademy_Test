@@ -1377,6 +1377,7 @@
     <Content Include="Views\MCWOK_Cooking\Index.cshtml" />
     <Content Include="Views\MC_CurriesTagines\Index.cshtml" />
     <None Include="Properties\PublishProfiles\rmatest - Web Deploy.pubxml" />
+    <Content Include="rmatest.PublishSettings" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
