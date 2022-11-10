@@ -1932,6 +1932,15 @@ textarea {
 .header .search-toggle button:hover {
   opacity: 0.9;
 }
+.headerlogo-mla {
+    position: static;
+    display: block;
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    text-align: center;
+}
+
 .logo-mla {
   position: absolute;
   top: 20px;
