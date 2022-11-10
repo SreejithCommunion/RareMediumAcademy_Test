@@ -1,0 +1,1299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC93F941-6266-41E9-84DD-8EC4161E5614}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RareMediumAcademy_03102022</RootNamespace>
+    <AssemblyName>RareMediumAcademy_03102022</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>true</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>packages\Castle.Windsor.4.1.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.Core.11.15.1\lib\net461\EPiServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.ApplicationModules, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.Framework.11.15.1\lib\net461\EPiServer.ApplicationModules.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Cms.AspNet, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.AspNet.11.15.1\lib\net461\EPiServer.Cms.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Cms.Shell.UI, Version=11.25.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.UI.Core.11.25.0\lib\net461\EPiServer.Cms.Shell.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Cms.TinyMce, Version=2.10.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.TinyMce.2.10.1\lib\net461\EPiServer.Cms.TinyMce.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Configuration, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.AspNet.11.15.1\lib\net461\EPiServer.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Data, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.Framework.11.15.1\lib\net461\EPiServer.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Data.Cache, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.Framework.11.15.1\lib\net461\EPiServer.Data.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Enterprise, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.Core.11.15.1\lib\net461\EPiServer.Enterprise.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Events, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.Framework.11.15.1\lib\net461\EPiServer.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Framework, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.Framework.11.15.1\lib\net461\EPiServer.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Framework.AspNet, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.Framework.AspNet.11.15.1\lib\net461\EPiServer.Framework.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.ImageLibrary, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.AspNet.11.15.1\lib\net461\EPiServer.ImageLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Licensing, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.Framework.11.15.1\lib\net461\EPiServer.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.LinkAnalyzer, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.Core.11.15.1\lib\net461\EPiServer.LinkAnalyzer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Logging.Log4Net, Version=2.2.2.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.Logging.Log4Net.2.2.2\lib\net461\EPiServer.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.ServiceLocation.StructureMap, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.ServiceLocation.StructureMap.2.0.3\lib\net461\EPiServer.ServiceLocation.StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Shell, Version=11.25.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.UI.Core.11.25.0\lib\net461\EPiServer.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Shell.UI, Version=11.25.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.UI.Core.11.25.0\lib\net461\EPiServer.Shell.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.UI, Version=11.25.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.UI.Core.11.25.0\lib\net461\EPiServer.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Web.WebControls, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.AspNet.11.15.1\lib\net461\EPiServer.Web.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=4.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\StructureMap.4.7.1\lib\net45\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\structuremap.web.4.0.0.315\lib\net40\StructureMap.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.ComponentModel.Annotations.4.4.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SqlClient, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.4.0\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.AccessControl.4.4.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Xml, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Xml.4.4.2\lib\net461\System.Security.Cryptography.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Permissions.4.4.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Principal.Windows.4.4.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.AccessControl, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.AccessControl.4.4.0\lib\net461\System.Threading.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=4.5.24.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Tpl.Dataflow.4.5.24\lib\portable-net45+win8+wpa81\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ItemGroup>
+    <Content Include="Content\images\Logos\masterclass.jpg" />
+    <Content Include="Content\images\Logos\msa.jpg" />
+    <Content Include="Content\images\Logos\producertoplate.jpg" />
+    <Content Include="Content\images\Logos\protips.jpg" />
+    <Content Include="Content\images\Logos\recepies.jpg" />
+    <Content Include="Content\images\MasterClass\Curries_Tagines\MC_CurriesTagines.png" />
+    <Content Include="Content\images\MasterClass\LowSlow\lowslow_Banner.jpg" />
+    <Content Include="Content\images\MasterClass\MasteringWokCooking\MCWOK_Cooking_Banner.png" />
+    <Content Include="Content\images\MasterClass\SummerLamb\summer_lamb_banner.jpg" />
+    <Content Include="Content\images\MasterClass\TravelSolutions\travelsolutions_Banner.png" />
+    <Content Include="Content\images\MasterClass\TravelSolutions\travelsolutions_Banner_1.jpg" />
+    <Content Include="Content\images\MSA\msa-banners-2.jpg" />
+    <Content Include="Content\images\ProducerToPlate\PTPBanner_1.png" />
+    <Content Include="Content\images\ProducerToPlate\PTPBanner_10.png" />
+    <Content Include="Content\images\ProducerToPlate\PTPBanner_2.png" />
+    <Content Include="Content\images\ProducerToPlate\PTPBanner_3.png" />
+    <Content Include="Content\images\ProducerToPlate\PTPBanner_4.png" />
+    <Content Include="Content\images\ProducerToPlate\PTPBanner_5.png" />
+    <Content Include="Content\images\ProducerToPlate\PTPBanner_6.png" />
+    <Content Include="Content\images\ProducerToPlate\PTPBanner_7.png" />
+    <Content Include="Content\images\ProducerToPlate\PTPBanner_8.png" />
+    <Content Include="Content\images\ProducerToPlate\PTPBanner_9.png" />
+    <Content Include="Content\masterclass.css" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MasterClassController.cs" />
+    <Compile Include="Controllers\MasterClass_LowSlowController.cs" />
+    <Compile Include="Controllers\MCWOK_CookingController.cs" />
+    <Compile Include="Controllers\MC_CurriesTaginesController.cs" />
+    <Compile Include="Controllers\MC_SummerLambController.cs" />
+    <Compile Include="Controllers\MC_TravelSolutionsController.cs" />
+    <Compile Include="Controllers\MeatAustralliaController.cs" />
+    <Compile Include="Controllers\ProducerToPlateController.cs" />
+    <Compile Include="Controllers\ProTipsController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Pages\Home.cs" />
+    <Compile Include="Models\Pages\MasterClass.cs" />
+    <Compile Include="Models\Pages\MasterClass_LowSlow.cs" />
+    <Compile Include="Models\Pages\MCWOK_Cooking.cs" />
+    <Compile Include="Models\Pages\MC_CurriesTagines.cs" />
+    <Compile Include="Models\Pages\MC_SummerLamb.cs" />
+    <Compile Include="Models\Pages\MC_TravelSolutions.cs" />
+    <Compile Include="Models\Pages\MeatAustrallia.cs" />
+    <Compile Include="Models\Pages\ProducerToPlate.cs" />
+    <Compile Include="Models\Pages\ProTips.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Business\" />
+    <Folder Include="Models\Blocks\" />
+    <Folder Include="Models\Media\" />
+    <Folder Include="Models\Properties\" />
+    <Folder Include="Static\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\404.png" />
+    <Content Include="Content\images\arrow-down-dark.svg" />
+    <Content Include="Content\images\arrow-down-select.svg" />
+    <Content Include="Content\images\arrow-down.svg" />
+    <Content Include="Content\images\arrow-left-dark.svg" />
+    <Content Include="Content\images\arrow-right-dark.svg" />
+    <Content Include="Content\images\bg-about.png" />
+    <Content Include="Content\images\bg-farm.jpg" />
+    <Content Include="Content\images\bg-production-feedlot.jpg" />
+    <Content Include="Content\images\bg-production-preparation.jpg" />
+    <Content Include="Content\images\bg-production-processing.jpg" />
+    <Content Include="Content\images\bg-quality-assurance.jpg" />
+    <Content Include="Content\images\bg-sustainability.jpg" />
+    <Content Include="Content\images\brace.svg" />
+    <Content Include="Content\images\caption.png" />
+    <Content Include="Content\images\chef_challenge\Sam_Miller_Tom_Halpin.jpg" />
+    <Content Include="Content\images\chev.svg" />
+    <Content Include="Content\images\chev_dark.svg" />
+    <Content Include="Content\images\circle-beige.svg" />
+    <Content Include="Content\images\circle-blue.svg" />
+    <Content Include="Content\images\circle-green.svg" />
+    <Content Include="Content\images\circle-yellow.svg" />
+    <Content Include="Content\images\circle.png" />
+    <Content Include="Content\images\circle.svg" />
+    <Content Include="Content\images\cut-charts\beef-black-and-white.jpg" />
+    <Content Include="Content\images\cut-charts\beef-colour.jpg" />
+    <Content Include="Content\images\cut-charts\downloads\Beef.jpg" />
+    <Content Include="Content\images\cut-charts\downloads\Goat.jpg" />
+    <Content Include="Content\images\cut-charts\downloads\Lamb.jpg" />
+    <Content Include="Content\images\cut-charts\downloads\Veal.jpg" />
+    <Content Include="Content\images\cut-charts\goat-black-and-white.jpg" />
+    <Content Include="Content\images\cut-charts\goat-colour.jpg" />
+    <Content Include="Content\images\cut-charts\lamb-black-and-white.jpg" />
+    <Content Include="Content\images\cut-charts\lamb-colour.jpg" />
+    <Content Include="Content\images\cut-charts\veal-black-and-white.jpg" />
+    <Content Include="Content\images\cut-charts\veal-colour.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_blade_steak.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_blade_steakx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_blade_whole.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_blade_wholex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_bolar_blade_whole.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_bolar_blade_wholex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_brisket_navel_end.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_brisket_navel_endx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_brisket_whole.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_brisket_wholex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_cheek.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_cheekx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_eye_whole.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_eye_wholex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_eye_whole_and_rolled.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_eye_whole_and_rolledx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_neck.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_neckx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_ribs.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_ribsx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_rib_plate.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_rib_platex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_steak.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_steakx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_whole.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_chuck_wholex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_cross_cut_blade.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_cross_cut_bladex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_Delmonico.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_Delmonicox2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_Denver.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_Denverx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_diced_lean.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_diced_leanx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_eye_fillet_center_cut.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_eye_fillet_center_cutx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_fillet_steak.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_fillet_steakx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_flank_whole.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_flank_wholex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_flap_meat.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_flap_meatx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_flat_iron_portion.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_flat_iron_portionx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_flat_iron_whole.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_flat_iron_wholex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_girello.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_girellox2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_Girello_whole.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_Girello_wholex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_inside_skirt.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_inside_skirtx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_knuckle_eye_medallion.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_knuckle_eye_medallionx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_knuckle_eye_roast.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_knuckle_eye_roastx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_marrowbone.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_marrowbones.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_marrowbonesx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_marrowbonex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_mince_lean.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_mince_leanx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_osso_buco.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_osso_bucox2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_oxtail_sliced.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_oxtail_slicedx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_oysterblade_whole.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_oysterblade_wholex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_oyster_blade_steak.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_oyster_blade_steakx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_point_end_brisket.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_point_end_brisketx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rib_eye.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rib_eyex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rib_eye_roast_on_the_bone.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rib_eye_roast_on_the_bonex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rost_bif.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rost_bifx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_round_steak.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_round_steakx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_cap_steak.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_cap_steakx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_cap_whole.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_cap_wholex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_centre.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_centrex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_centre_cut_steak.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_centre_cut_steakx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_eye_medallion.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_eye_medallionx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_eye_side.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_eye_sidex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_roast.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_roastx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_steak.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_rump_steakx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_scotch_fillet_roast.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_scotch_fillet_roastx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_scotch_fillet_steak.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_scotch_fillet_steakx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_shin_boneless.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_shin_bonelessx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_short_ribs.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_short_ribsx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_short_ribs_asado_style.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_short_ribs_asado_stylex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_short_ribs_asado_style_single.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_short_ribs_asado_style_singlex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_silverside_corned.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_silverside_cornedx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_silverside_roast_aitach_bone.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_silverside_roast_aitach_bonex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_sirloin_boneless.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_sirloin_bonelessx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_sirloin_steak_bone_in.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_sirloin_steak_bone_inx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_sirloin_whole.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_sirloin_wholex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_stir_fry_strips.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_stir_fry_stripsx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_tenderloin_butt.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_tenderloin_buttx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_tenderloin_butt_centre_tail.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_tenderloin_butt_centre_tailx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_tenderloin_tail.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_tenderloin_tailx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_thick_skirt.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_thick_skirt2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_thick_skirt2x2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_thick_skirtx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_thin_slice.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_thin_slicex2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_tomahawk.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_tomahawkx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_topside_roast.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_topside_roastx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_topside_steak.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_topside_steakx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_tri_tip.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_tri_tipx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_T_bone_steak.jpg" />
+    <Content Include="Content\images\cuts\beef\Beef_T_bone_steakx2.jpg" />
+    <Content Include="Content\images\cuts\beef\Goat_butterflied.jpg" />
+    <Content Include="Content\images\cuts\beef\Goat_butterfliedx2.jpg" />
+    <Content Include="Content\images\cuts\cooking-methods\Beef_icn_diced.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Beef_icn_fry.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Beef_icn_roast.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Beef_icn_sausage.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Beef_icn_slow_cooking.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Beef_icn_smoker.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Beef_icn_sous_vide.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Goat_icn_diced.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Goat_icn_fry.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Goat_icn_roast.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Goat_icn_sausage.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Goat_icn_slow_cooking.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Goat_icn_smoker.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Goat_icn_sous_vide.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Lamb_icn_diced.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Lamb_icn_fry.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Lamb_icn_roast.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Lamb_icn_sausage.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Lamb_icn_slow_cooking.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Lamb_icn_smoker.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Lamb_icn_sous_vide.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Veal_icn_diced.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Veal_icn_fry.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Veal_icn_roast.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Veal_icn_sausage.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Veal_icn_slow_cooking.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Veal_icn_smoker.png" />
+    <Content Include="Content\images\cuts\cooking-methods\Veal_icn_sous_vide.png" />
+    <Content Include="Content\images\cuts\goat\Goat_belly_whole.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_belly_wholex2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_best_neck_chop.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_best_neck_chopx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_butterflied.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_butterfliedx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_chump_chop.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_chump_chopx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_chump_whole.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_chump_wholex2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_cutlet_single.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_cutlet_singlex2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_diced_bone_in.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_diced_bone_inx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_eye_of_loin.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_eye_of_loinx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_forequarter_boned_and_rolled.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_forequarter_boned_and_rolledx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_forequarter_chop.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_forequarter_chopx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_forequarter_rack.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_forequarter_rackx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_fore_shank.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_fore_shankx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_hind_shank.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_hind_shankx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_knuckle_mini_roast.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_knuckle_mini_roastx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_leg_boned_and_rolled.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_leg_boned_and_rolledx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_leg_easy_carve.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_leg_easy_carvex2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_leg_whole.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_leg_wholex2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_loin_boned_and_rolled_double.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_loin_boned_and_rolled_doublex2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_loin_boned_and_rolled_single.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_loin_boned_and_rolled_singlex2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_loin_chop.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_loin_chopx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_neck_fillet.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_neck_filletx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_neck_rosette.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_neck_rosettex2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_rack_frenched.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_rack_frenchedx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_riblets.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_ribletsx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_rump_cap_off.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_rump_cap_offx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_rump_cap_on.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_rump_cap_onx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_rump_steak.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_rump_steakx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_shoulder_boned_and_rolled.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_shoulder_boned_and_rolledx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_shoulder_bone_in_whole.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_shoulder_bone_in_wholex2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_steak_topside.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_steak_topsidex2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_tenderloin.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_tenderloinx2.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_topside.jpg" />
+    <Content Include="Content\images\cuts\goat\Goat_topsidex2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_belly_riblets.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_belly_ribletsx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_best_neck_chop.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_best_neck_chopx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_bone-in_shoulder.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_bone-in_shoulderx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_breast.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_breastx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_butterflied_leg.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_butterflied_legx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_chump_chop.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_chump_chopx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_cutlet_pair.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_cutlet_pairx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_cutlet_single.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_cutlet_singlex2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_diced_lean.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_diced_leanx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_easy_carve_leg.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_easy_carve_legx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_eye_of_loin.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_eye_of_loinx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_flap.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_flapx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_forequarter_chop.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_forequarter_chopx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_forequarter_round_bone_chop.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_forequarter_round_bone_chopx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_forquarter_rack.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_forquarter_rackx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_knuckle_mini_roast.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_knuckle_mini_roastx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_leg_boned_and_rolled.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_leg_boned_and_rolledx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_leg_chop.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_leg_chopx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_leg_cushion_boned_rolled.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_leg_cushion_boned_rolledx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_leg_steak_topside.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_leg_steak_topsidex2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_leg_whole.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_leg_wholex2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_loin_boned_and_rolled_unbranded.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_loin_boned_and_rolled_unbrandedx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_loin_chop.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_loin_chopx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_loin_medallion.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_loin_medallionx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_loin_roast_boned_and_rolled_double.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_loin_roast_boned_and_rolled_doublex2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_loin_roast_boned_and_rolled_single.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_loin_roast_boned_and_rolled_singlex2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_mince_lean.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_mince_leanx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_neck_fillet.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_neck_filletx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_neck_rosette.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_neck_rosettex2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_rack_frenched_branded.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_rack_frenched_brandedx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_rack_frenched_unbranded.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_rack_frenched_unbrandedx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_ribblets.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_ribbletsx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_rump_cap_off.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_rump_cap_offx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_rump_cap_on.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_rump_cap_onx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_rump_steak.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_rump_steakx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_shank_forquarter.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_shank_forquarterx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_shank_hindquarter.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_shank_hindquarterx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_shoulder_boned_and_rolled.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_shoulder_boned_and_rolledx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_shoulder_butt.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_shoulder_buttx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_shoulder_easy_carve.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_shoulder_easy_carvex2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_shoulder_rack.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_shoulder_rackx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_silverside_roast.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_silverside_roastx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_squarecut_shoulder.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_squarecut_shoulderx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_tenderloin.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_tenderloinx2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_thin_slice.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_thin_slicex2.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_topside_roast.jpg" />
+    <Content Include="Content\images\cuts\lamb\Lamb_topside_roastx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_blade_roast.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_blade_roastx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_blade_steak.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_blade_steakx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_blade_whole.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_blade_wholex2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_butt_fillet.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_butt_filletx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_chuck_steak.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_chuck_steakx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_chuck_whole.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_chuck_wholex2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_cross_cut_blade.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_cross_cut_bladex2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_cutet.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_cutetx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_diced.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_dicedx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_flank.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_flankx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_flap_meat.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_flap_meatx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_flat_iron_portion.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_flat_iron_portionx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_flat_iron_whole.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_flat_iron_wholex2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_fore_shank.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_fore_shankx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_girello.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_girellox2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_hind_shank.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_hind_shankx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_knuckle_whole.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_knuckle_wholex2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_osso_buco.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_osso_bucox2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_oyster_blade_whole.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_oyster_blade_wholex2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_point_end_brisket.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_point_end_brisketx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_rack.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_rackx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_round_steak.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_round_steakx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_rump_roast.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_rump_roastx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_rump_steak.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_rump_steakx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_schnitzel.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_schnitzelx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_scotch_fillet_loin.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_scotch_fillet_loinx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_scotch_fillet_roast.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_scotch_fillet_roastx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_scotch_fillet_steak.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_scotch_fillet_steakx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_scotch_fillet_whole.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_scotch_fillet_wholex2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_shin_meat.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_shin_meatx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_short_ribs.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_short_ribsx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_shoulder_boned_and_rolled.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_shoulder_boned_and_rolledx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_silverside_roast.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_silverside_roastx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_sirloin_steak.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_sirloin_steakx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_sirloin_whole.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_sirloin_wholex2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_skirt_steak.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_skirt_steakx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_tenderloin.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_tenderloinx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_topside_cap_off.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_topside_cap_offx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_topside_roast.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_topside_roastx2.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_T_bone.jpg" />
+    <Content Include="Content\images\cuts\veal\Veal_T_bonex2.jpg" />
+    <Content Include="Content\images\desktop-search.png" />
+    <Content Include="Content\images\emag\Capture2.jpg" />
+    <Content Include="Content\images\emag\Emag.jpg" />
+    <Content Include="Content\images\emag\RareMedium_EDMCover.jpg" />
+    <Content Include="Content\images\emag\RareMedium_emag.jpg" />
+    <Content Include="Content\images\facebook.png" />
+    <Content Include="Content\images\facebook_image.png" />
+    <Content Include="Content\images\hamburger-dark.svg" />
+    <Content Include="Content\images\hamburger.svg" />
+    <Content Include="Content\images\hero-beef-grain-fed.jpg" />
+    <Content Include="Content\images\hero-beef-grass-fed.jpg" />
+    <Content Include="Content\images\hero-beef-light.svg" />
+    <Content Include="Content\images\hero-beef.svg" />
+    <Content Include="Content\images\hero-goat-light.svg" />
+    <Content Include="Content\images\hero-goat.jpg" />
+    <Content Include="Content\images\hero-goat.svg" />
+    <Content Include="Content\images\hero-lamb-light.svg" />
+    <Content Include="Content\images\hero-lamb.jpg" />
+    <Content Include="Content\images\hero-lamb.svg" />
+    <Content Include="Content\images\hero-veal-light.svg" />
+    <Content Include="Content\images\hero-veal.jpg" />
+    <Content Include="Content\images\hero-veal.svg" />
+    <Content Include="Content\images\hexagon-play.svg" />
+    <Content Include="Content\images\icon-close.svg" />
+    <Content Include="Content\images\instagram.png" />
+    <Content Include="Content\images\issue1.jpg" />
+    <Content Include="Content\images\issue2.jpg" />
+    <Content Include="Content\images\issue3.jpg" />
+    <Content Include="Content\images\issue4.jpg" />
+    <Content Include="Content\images\loader.gif" />
+    <Content Include="Content\images\logo-desktop-dark.svg" />
+    <Content Include="Content\images\logo-desktop.svg" />
+    <Content Include="Content\images\logo-mobile%402x.png" />
+    <Content Include="Content\images\logo-mobile-dark%402x.png" />
+    <Content Include="Content\images\logo-mobile.svg" />
+    <Content Include="Content\images\logo.svg" />
+    <Content Include="Content\images\Logos\raremediumacademy_logofooter.png" />
+    <Content Include="Content\images\MasterClass\210427_mla0228.jpeg" />
+    <Content Include="Content\images\MasterClass\food-that-travels.jpeg" />
+    <Content Include="Content\images\MasterClass\greatsteaks_hero.jpeg" />
+    <Content Include="Content\images\MasterClass\grilled-sirloin.jpeg" />
+    <Content Include="Content\images\MasterClass\low-slow.jpeg" />
+    <Content Include="Content\images\MasterClass\masterclass-curries.jpeg" />
+    <Content Include="Content\images\MasterClass\mastering-wok-cooking.jpeg" />
+    <Content Include="Content\images\MasterClass\roastscarvery-banner.jpeg" />
+    <Content Include="Content\images\MasterClass\summer-lamb.jpeg" />
+    <Content Include="Content\images\mouse-blue.png" />
+    <Content Include="Content\images\mouse-gold.png" />
+    <Content Include="Content\images\mouse-green.png" />
+    <Content Include="Content\images\mouse-yellow.png" />
+    <Content Include="Content\images\nav-arrow-down-dark.svg" />
+    <Content Include="Content\images\primal-burger-beef.svg" />
+    <Content Include="Content\images\primal-burger-goat.svg" />
+    <Content Include="Content\images\primal-burger-lamb.svg" />
+    <Content Include="Content\images\primal-burger-veal.svg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Blade.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Brisket.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Cheek.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Chuck.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Cube_roll.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Flank.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Hanger.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Knuckle.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Oxtail.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Rump.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Shin.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Shortribs.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Silverside.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Skirt.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Striploin.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Tenderloin.jpg" />
+    <Content Include="Content\images\primals\beef\Beef_Primal_Topside.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Blade.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Brisket.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Cheek.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Chuck.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Cube_roll.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Flank.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Hanger.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Knuckle.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Oxtail.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Rump.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Shin.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Shortribs.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Silverside.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Skirt.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Striploin.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Tenderloin.jpg" />
+    <Content Include="Content\images\primals\beef\OLD\Beef_Primal_Topside.jpg" />
+    <Content Include="Content\images\primals\goat\Goat_Primal_Belly.jpg" />
+    <Content Include="Content\images\primals\goat\Goat_Primal_Chump.jpg" />
+    <Content Include="Content\images\primals\goat\Goat_Primal_Forequarter.jpg" />
+    <Content Include="Content\images\primals\goat\Goat_Primal_Leg.jpg" />
+    <Content Include="Content\images\primals\goat\Goat_Primal_Neck.jpg" />
+    <Content Include="Content\images\primals\goat\Goat_Primal_Rack.jpg" />
+    <Content Include="Content\images\primals\goat\Goat_Primal_Shank.jpg" />
+    <Content Include="Content\images\primals\goat\Goat_Primal_Shortloin.jpg" />
+    <Content Include="Content\images\primals\goat\Goat_Primal_Tenderloin.jpg" />
+    <Content Include="Content\images\primals\goat\OLD\Goat_Primal_Belly.jpg" />
+    <Content Include="Content\images\primals\goat\OLD\Goat_Primal_Chump.jpg" />
+    <Content Include="Content\images\primals\goat\OLD\Goat_Primal_Forequarter.jpg" />
+    <Content Include="Content\images\primals\goat\OLD\Goat_Primal_Leg.jpg" />
+    <Content Include="Content\images\primals\goat\OLD\Goat_Primal_Neck.jpg" />
+    <Content Include="Content\images\primals\goat\OLD\Goat_Primal_Rack.jpg" />
+    <Content Include="Content\images\primals\goat\OLD\Goat_Primal_Shank.jpg" />
+    <Content Include="Content\images\primals\goat\OLD\Goat_Primal_Shortloin.jpg" />
+    <Content Include="Content\images\primals\goat\OLD\Goat_Primal_Tenderloin.jpg" />
+    <Content Include="Content\images\primals\lamb\Lamb_Primal_Breast-Belly.jpg" />
+    <Content Include="Content\images\primals\lamb\Lamb_Primal_Chump.jpg" />
+    <Content Include="Content\images\primals\lamb\Lamb_Primal_Forequarter.jpg" />
+    <Content Include="Content\images\primals\lamb\Lamb_Primal_Leg.jpg" />
+    <Content Include="Content\images\primals\lamb\Lamb_Primal_Neck.jpg" />
+    <Content Include="Content\images\primals\lamb\Lamb_Primal_Rack.jpg" />
+    <Content Include="Content\images\primals\lamb\Lamb_Primal_Shank.jpg" />
+    <Content Include="Content\images\primals\lamb\Lamb_Primal_Shortloin.jpg" />
+    <Content Include="Content\images\primals\lamb\Lamb_Primal_Tenderloin.jpg" />
+    <Content Include="Content\images\primals\lamb\OLD\Lamb_Primal_Breast-Belly.jpg" />
+    <Content Include="Content\images\primals\lamb\OLD\Lamb_Primal_Chump.jpg" />
+    <Content Include="Content\images\primals\lamb\OLD\Lamb_Primal_Forequarter.jpg" />
+    <Content Include="Content\images\primals\lamb\OLD\Lamb_Primal_Leg.jpg" />
+    <Content Include="Content\images\primals\lamb\OLD\Lamb_Primal_Neck.jpg" />
+    <Content Include="Content\images\primals\lamb\OLD\Lamb_Primal_Rack.jpg" />
+    <Content Include="Content\images\primals\lamb\OLD\Lamb_Primal_Shank.jpg" />
+    <Content Include="Content\images\primals\lamb\OLD\Lamb_Primal_Shortloin.jpg" />
+    <Content Include="Content\images\primals\lamb\OLD\Lamb_Primal_Tenderloin.jpg" />
+    <Content Include="Content\images\primals\veal\OLD\Veal_Primal_Blade.jpg" />
+    <Content Include="Content\images\primals\veal\OLD\Veal_Primal_Chuck.jpg" />
+    <Content Include="Content\images\primals\veal\OLD\Veal_Primal_Knuckle.jpg" />
+    <Content Include="Content\images\primals\veal\OLD\Veal_Primal_Loin.jpg" />
+    <Content Include="Content\images\primals\veal\OLD\Veal_Primal_Ribs_prepared.jpg" />
+    <Content Include="Content\images\primals\veal\OLD\Veal_Primal_Rump.jpg" />
+    <Content Include="Content\images\primals\veal\OLD\Veal_Primal_Shin.jpg" />
+    <Content Include="Content\images\primals\veal\OLD\Veal_Primal_ShortRibs.jpg" />
+    <Content Include="Content\images\primals\veal\OLD\Veal_Primal_Silverside.jpg" />
+    <Content Include="Content\images\primals\veal\OLD\Veal_Primal_Tenderloin.jpg" />
+    <Content Include="Content\images\primals\veal\OLD\Veal_Primal_Topside.jpg" />
+    <Content Include="Content\images\primals\veal\Veal_Primal_Blade.jpg" />
+    <Content Include="Content\images\primals\veal\Veal_Primal_Brisket.jpg" />
+    <Content Include="Content\images\primals\veal\Veal_Primal_Chuck.jpg" />
+    <Content Include="Content\images\primals\veal\Veal_Primal_Knuckle.jpg" />
+    <Content Include="Content\images\primals\veal\Veal_Primal_Loin.jpg" />
+    <Content Include="Content\images\primals\veal\Veal_Primal_Ribs_prepared.jpg" />
+    <Content Include="Content\images\primals\veal\Veal_Primal_Rump.jpg" />
+    <Content Include="Content\images\primals\veal\Veal_Primal_Shin.jpg" />
+    <Content Include="Content\images\primals\veal\Veal_Primal_ShortRibs.jpg" />
+    <Content Include="Content\images\primals\veal\Veal_Primal_Silverside.jpg" />
+    <Content Include="Content\images\primals\veal\Veal_Primal_Tenderloin.jpg" />
+    <Content Include="Content\images\primals\veal\Veal_Primal_Topside.jpg" />
+    <Content Include="Content\images\production-intro1.jpg" />
+    <Content Include="Content\images\production-intro2.jpg" />
+    <Content Include="Content\images\production-intro3.jpg" />
+    <Content Include="Content\images\production\farm\beef-intro.jpg" />
+    <Content Include="Content\images\production\farm\beef.jpg" />
+    <Content Include="Content\images\production\farm\goat.jpg" />
+    <Content Include="Content\images\production\farm\intro.jpg" />
+    <Content Include="Content\images\production\farm\region1.jpg" />
+    <Content Include="Content\images\production\farm\region2.jpg" />
+    <Content Include="Content\images\production\farm\sheep.jpg" />
+    <Content Include="Content\images\production\farm\type1.jpg" />
+    <Content Include="Content\images\production\farm\type2.jpg" />
+    <Content Include="Content\images\production\farm\veal.jpg" />
+    <Content Include="Content\images\production\farm\wagyu.jpg" />
+    <Content Include="Content\images\production\preparation\aging.gif" />
+    <Content Include="Content\images\production\preparation\hanging\cuts-meat-mobile.png" />
+    <Content Include="Content\images\production\preparation\hanging\cuts-meat.png" />
+    <Content Include="Content\images\production\preparation\hanging\hanging-method-archilles.png" />
+    <Content Include="Content\images\production\preparation\hanging\hanging-method-tenderstretch.png" />
+    <Content Include="Content\images\production\preparation\hanging\intro.jpg" />
+    <Content Include="Content\images\production\processing\step1.png" />
+    <Content Include="Content\images\production\processing\step4.png" />
+    <Content Include="Content\images\production\processing\step7.png" />
+    <Content Include="Content\images\production\processing\step8.png" />
+    <Content Include="Content\images\production\production-animals.jpg" />
+    <Content Include="Content\images\protein-selection-caption-beef.png" />
+    <Content Include="Content\images\protein-selection-caption-goat.png" />
+    <Content Include="Content\images\protein-selection-caption-lamb.png" />
+    <Content Include="Content\images\protein-selection-caption-veal.png" />
+    <Content Include="Content\images\proteins\beef\breeds-bos-indicus.jpg" />
+    <Content Include="Content\images\proteins\beef\breeds-bos-taurus.jpg" />
+    <Content Include="Content\images\proteins\beef\grain-fed\beef-grain-fed.jpg" />
+    <Content Include="Content\images\proteins\beef\grain-fed\beef-grain-fed.png" />
+    <Content Include="Content\images\proteins\beef\grain-fed\grain-fed-animal.png" />
+    <Content Include="Content\images\proteins\beef\grain-fed\grain-fed-intro.png" />
+    <Content Include="Content\images\proteins\beef\grain-fed\grain-fed-landscape.png" />
+    <Content Include="Content\images\proteins\beef\grass-fed\beef-inspiration-coal.jpg" />
+    <Content Include="Content\images\proteins\beef\grass-fed\beef-inspiration-curry.jpg" />
+    <Content Include="Content\images\proteins\beef\grass-fed\beef-inspiration-salad.jpg" />
+    <Content Include="Content\images\proteins\beef\grass-fed\grass-fed-animals.png" />
+    <Content Include="Content\images\proteins\beef\grass-fed\grass-fed-landscape.png" />
+    <Content Include="Content\images\proteins\beef\marbling-intro.jpg" />
+    <Content Include="Content\images\proteins\beef\pull-quote-brace.svg" />
+    <Content Include="Content\images\proteins\goat\goat-meal-1.jpg" />
+    <Content Include="Content\images\proteins\goat\goat-meal-2.jpg" />
+    <Content Include="Content\images\proteins\goat\Goat_Farmed_Image.jpg" />
+    <Content Include="Content\images\proteins\goat\Goat_Rangeland_Image.jpg" />
+    <Content Include="Content\images\proteins\lamb\lamb-meal1.jpg" />
+    <Content Include="Content\images\proteins\lamb\lamb-meal2.jpg" />
+    <Content Include="Content\images\proteins\lamb\Proteins_Lamb.jpg" />
+    <Content Include="Content\images\proteins\protein-select.png" />
+    <Content Include="Content\images\proteins\veal\veal-meal1.jpg" />
+    <Content Include="Content\images\proteins\veal\veal-meal2.jpg" />
+    <Content Include="Content\images\Pro_Tips\protips_beef.jpg" />
+    <Content Include="Content\images\Pro_Tips\protips_industry.png" />
+    <Content Include="Content\images\Pro_Tips\protips_lamb.jpg" />
+    <Content Include="Content\images\Pro_Tips\redmeatoverflames.jpg" />
+    <Content Include="Content\images\Pro_Tips\tnmcreativemedia_mla-23.jpg" />
+    <Content Include="Content\images\recipes\Aaron_Turner_Veal_Rump.jpg" />
+    <Content Include="Content\images\recipes\Brent-Savage-Smoked-Lamb-Neck.jpg" />
+    <Content Include="Content\images\recipes\Chris_Goulding_Smoked_and_Braised_Goat_Rump.jpg" />
+    <Content Include="Content\images\recipes\Chris_Wade_Beef_Knuckle.jpg" />
+    <Content Include="Content\images\recipes\Dan-Hong-Lamb-Breast.jpg" />
+    <Content Include="Content\images\recipes\Darren_Anglesey_Beef_Shin.jpg" />
+    <Content Include="Content\images\recipes\Dave-Verheul-Lamb-Chump.jpg" />
+    <Content Include="Content\images\recipes\Dave_Verheul_Beef_Rump.jpg" />
+    <Content Include="Content\images\recipes\Duncan_Welgemoed_Goat_Leg.jpg" />
+    <Content Include="Content\images\recipes\Giovanni_Pilu_Goat_Forequarter.jpg" />
+    <Content Include="Content\images\recipes\Guy-Turland-Lamb-Shank.jpg" />
+    <Content Include="Content\images\recipes\Jacob_Young_Veal_Silverside.jpg" />
+    <Content Include="Content\images\recipes\Joel_Bickford_Beef_Chuck.jpg" />
+    <Content Include="Content\images\recipes\Jordan_Toft_Beef_Hanger.jpg" />
+    <Content Include="Content\images\recipes\Luke_Powell_Flank_Steak.jpg" />
+    <Content Include="Content\images\recipes\Marco-Pierre-White-Lamb-Leg.jpg" />
+    <Content Include="Content\images\recipes\Marco_Pierre_White_Blade.jpg" />
+    <Content Include="Content\images\recipes\Marco_Pierre_White_Skirt_Steak.jpg" />
+    <Content Include="Content\images\recipes\Massimo_Mele_Goat_Shank.jpg" />
+    <Content Include="Content\images\recipes\Matt_Moran_Veal_Chuck.jpg" />
+    <Content Include="Content\images\recipes\Michael_Acevedo_Veal_Shoulder.jpg" />
+    <Content Include="Content\images\recipes\Mike-Eggert-Lamb-Shoulder.jpg" />
+    <Content Include="Content\images\recipes\Mike_Eggert_Goat_Neck.jpg" />
+    <Content Include="Content\images\recipes\Mike_Eggert_Goat_Short_Loin.jpg" />
+    <Content Include="Content\images\recipes\Mitch_Orr_Beef_Topside.jpg" />
+    <Content Include="Content\images\recipes\MLA-178.jpg" />
+    <Content Include="Content\images\recipes\Nicky_Reimer_Beef_Blade.jpg" />
+    <Content Include="Content\images\recipes\Nick_Finn_Veal_Rack.jpg" />
+    <Content Include="Content\images\recipes\Patrick_Friesen_Beef_Brisket.jpg" />
+    <Content Include="Content\images\recipes\Paul_Tyas_Beef_Cheek.jpg" />
+    <Content Include="Content\images\recipes\RareMedium_MassimoMele_Clean.jpg" />
+    <Content Include="Content\images\recipes\Stuart_Bell_Beef_Short_Rib.jpg" />
+    <Content Include="Content\images\recipes\Zachary_Ronayne_Goat_Rack.jpg" />
+    <Content Include="Content\images\resources\01_MCC_EP1.jpg" />
+    <Content Include="Content\images\resources\02_MCC_EP2.jpg" />
+    <Content Include="Content\images\resources\03_MCC_EP3.jpg" />
+    <Content Include="Content\images\resources\04_MCC_EP4.jpg" />
+    <Content Include="Content\images\resources\05_MCC_EP5.jpg" />
+    <Content Include="Content\images\resources\06_MCC_EP6.jpg" />
+    <Content Include="Content\images\resources\07_MCC_EP7.jpg" />
+    <Content Include="Content\images\resources\08_MCC_EP8.jpg" />
+    <Content Include="Content\images\resources\09_MCC_EP9.jpg" />
+    <Content Include="Content\images\resources\10_MCC_EP10.jpg" />
+    <Content Include="Content\images\resources\11_CBTS_Dan&amp;Mitch.jpg" />
+    <Content Include="Content\images\resources\12_Jordan&amp;Vlad.jpg" />
+    <Content Include="Content\images\resources\13_CBTS_Michael&amp;Chris.jpg" />
+    <Content Include="Content\images\resources\14_CBTS_Andrew&amp;Russell.jpg" />
+    <Content Include="Content\images\resources\15_CBTS_Mike&amp;Paul.jpg" />
+    <Content Include="Content\images\resources\16_CBTS_Dan&amp;Patrick.jpg" />
+    <Content Include="Content\images\resources\17_CBTS_Amber&amp;Michael.jpg" />
+    <Content Include="Content\images\resources\18_CBTS_Andrew&amp;Paul.jpg" />
+    <Content Include="Content\images\resources\20_CBTS_Mitch&amp;Jordan.jpg" />
+    <Content Include="Content\images\resources\21_CBTS_JesseMcTavish.jpg" />
+    <Content Include="Content\images\resources\22_CTW_OysterBlade.jpg" />
+    <Content Include="Content\images\resources\23_CTW_LambBelly.jpg" />
+    <Content Include="Content\images\resources\24_CTW_Brisket.jpg" />
+    <Content Include="Content\images\resources\25_CTW_LambRump.jpg" />
+    <Content Include="Content\images\resources\26_CTW_FestiveBeef&amp;Lamb.jpg" />
+    <Content Include="Content\images\resources\27_CTW_GoatShoulder.jpg" />
+    <Content Include="Content\images\resources\28_WCB_Beef.jpg" />
+    <Content Include="Content\images\resources\29_WCB_Lamb.jpg" />
+    <Content Include="Content\images\resources\30_WCB_Goat.jpg" />
+    <Content Include="Content\images\resources\31_PTP_BestBloodySteak.jpg" />
+    <Content Include="Content\images\resources\32_PTP_BetterThePlate.jpg" />
+    <Content Include="Content\images\resources\33_PTP_IntoThePaddock.jpg" />
+    <Content Include="Content\images\resources\34_PTP_BigBeef.jpg" />
+    <Content Include="Content\images\resources\35_CP_Embla.jpg" />
+    <Content Include="Content\images\resources\36_CP_Africola.jpg" />
+    <Content Include="Content\images\resources\37_CP_Momofuku.jpg" />
+    <Content Include="Content\images\resources\38_CP_JordanToft.jpg" />
+    <Content Include="Content\images\resources\39_CS_LambLeg.jpg" />
+    <Content Include="Content\images\resources\40_CS_BeefRump.jpg" />
+    <Content Include="Content\images\resources\41_CS_LambChump.jpg" />
+    <Content Include="Content\images\resources\42_CS_SummerSteaks.jpg" />
+    <Content Include="Content\images\resources\43_DU10_LambSilverside.jpg" />
+    <Content Include="Content\images\resources\44_DU10_LambRump.jpg" />
+    <Content Include="Content\images\resources\45_DU10_RumpCapHarissa.jpg" />
+    <Content Include="Content\images\resources\46_DU10_RumpCapRadicchio.jpg" />
+    <Content Include="Content\images\resources\47_DU10_LambCeviche.jpg" />
+    <Content Include="Content\images\resources\48_DU10_JerkLamb.jpg" />
+    <Content Include="Content\images\resources\49_DU10_BeefRibs.jpg" />
+    <Content Include="Content\images\resources\50_DU10_Kibbe.jpg" />
+    <Content Include="Content\images\resources\51_Roadies1.jpg" />
+    <Content Include="Content\images\resources\52_Roadies2.jpg" />
+    <Content Include="Content\images\resources\53_GTKG_Farmed.jpg" />
+    <Content Include="Content\images\resources\54_GTKG_Rangeland.jpg" />
+    <Content Include="Content\images\resources\55_GTKG_Carcase.jpg" />
+    <Content Include="Content\images\resources\56_HT_DuncanWelgemoedLamb.jpg" />
+    <Content Include="Content\images\resources\57_HT_DuncanWelgemoedBeef.jpg" />
+    <Content Include="Content\images\resources\58_HT_MikeEggertLamb.jpg" />
+    <Content Include="Content\images\resources\59_HT_MikeEggertBeef.jpg" />
+    <Content Include="Content\images\resources\60_HT_JakeSmythLamb.jpg" />
+    <Content Include="Content\images\resources\61_HT_JakeSmythBeef.jpg" />
+    <Content Include="Content\images\resources\62_HT_DanielleAlvarezLamb.jpg" />
+    <Content Include="Content\images\resources\63_HT_DanielleAlvarezBeef.jpg" />
+    <Content Include="Content\images\resources\64_HT_AaronWardLamb.jpg" />
+    <Content Include="Content\images\resources\65_HT_AaronWardBeef.jpg" />
+    <Content Include="Content\images\resources\old\01_MCC_EP1.jpg" />
+    <Content Include="Content\images\resources\old\02_MCC_EP2.jpg" />
+    <Content Include="Content\images\resources\old\03_MCC_EP3.jpg" />
+    <Content Include="Content\images\resources\old\04_MCC_EP4.jpg" />
+    <Content Include="Content\images\resources\old\05_MCC_EP5.jpg" />
+    <Content Include="Content\images\resources\old\06_MCC_EP6.jpg" />
+    <Content Include="Content\images\resources\old\07_MCC_EP7.jpg" />
+    <Content Include="Content\images\resources\old\08_MCC_EP8.jpg" />
+    <Content Include="Content\images\resources\old\09_MCC_EP9.jpg" />
+    <Content Include="Content\images\resources\old\10_MCC_EP10.jpg" />
+    <Content Include="Content\images\resources\old\11_CBTS_Dan&amp;Mitch.jpg" />
+    <Content Include="Content\images\resources\old\12_Jordan&amp;Vlad.jpg" />
+    <Content Include="Content\images\resources\old\13_CBTS_Michael&amp;Chris.jpg" />
+    <Content Include="Content\images\resources\old\14_CBTS_Andrew&amp;Russell.jpg" />
+    <Content Include="Content\images\resources\old\15_CBTS_Mike&amp;Paul.jpg" />
+    <Content Include="Content\images\resources\old\16_CBTS_Dan&amp;Patrick.jpg" />
+    <Content Include="Content\images\resources\old\17_CBTS_Amber&amp;Michael.jpg" />
+    <Content Include="Content\images\resources\old\18_CBTS_Andrew&amp;Paul.jpg" />
+    <Content Include="Content\images\resources\old\20_CBTS_Mitch&amp;Jordan.jpg" />
+    <Content Include="Content\images\resources\old\21_CBTS_JesseMcTavish.jpg" />
+    <Content Include="Content\images\resources\old\22_CTW_OysterBlade.jpg" />
+    <Content Include="Content\images\resources\old\23_CTW_LambBelly.jpg" />
+    <Content Include="Content\images\resources\old\24_CTW_Brisket.jpg" />
+    <Content Include="Content\images\resources\old\25_CTW_LambRump.jpg" />
+    <Content Include="Content\images\resources\old\26_CTW_FestiveBeef&amp;Lamb.jpg" />
+    <Content Include="Content\images\resources\old\27_CTW_GoatShoulder.jpg" />
+    <Content Include="Content\images\resources\old\28_WCB_Beef.jpg" />
+    <Content Include="Content\images\resources\old\29_WCB_Lamb.jpg" />
+    <Content Include="Content\images\resources\old\30_WCB_Goat.jpg" />
+    <Content Include="Content\images\resources\old\31_PTP_BestBloodySteak.jpg" />
+    <Content Include="Content\images\resources\old\32_PTP_BetterThePlate.jpg" />
+    <Content Include="Content\images\resources\old\33_PTP_IntoThePaddock.jpg" />
+    <Content Include="Content\images\resources\old\34_PTP_BigBeef.jpg" />
+    <Content Include="Content\images\resources\old\35_CP_Embla.jpg" />
+    <Content Include="Content\images\resources\old\36_CP_Africola.jpg" />
+    <Content Include="Content\images\resources\old\37_CP_Momofuku.jpg" />
+    <Content Include="Content\images\resources\old\38_CP_JordanToft.jpg" />
+    <Content Include="Content\images\resources\old\39_CS_LambLeg.jpg" />
+    <Content Include="Content\images\resources\old\40_CS_BeefRump.jpg" />
+    <Content Include="Content\images\resources\old\41_CS_LambChump.jpg" />
+    <Content Include="Content\images\resources\old\42_CS_SummerSteaks.jpg" />
+    <Content Include="Content\images\resources\old\43_DU10_LambSilverside.jpg" />
+    <Content Include="Content\images\resources\old\44_DU10_LambRump.jpg" />
+    <Content Include="Content\images\resources\old\45_DU10_RumpCapHarissa.jpg" />
+    <Content Include="Content\images\resources\old\46_DU10_RumpCapRadicchio.jpg" />
+    <Content Include="Content\images\resources\old\47_DU10_LambCeviche.jpg" />
+    <Content Include="Content\images\resources\old\48_DU10_JerkLamb.jpg" />
+    <Content Include="Content\images\resources\old\49_DU10_BeefRibs.jpg" />
+    <Content Include="Content\images\resources\old\50_DU10_Kibbe.jpg" />
+    <Content Include="Content\images\resources\old\51_Roadies1.jpg" />
+    <Content Include="Content\images\resources\old\52_Roadies2.jpg" />
+    <Content Include="Content\images\resources\old\53_GTKG_Farmed.jpg" />
+    <Content Include="Content\images\resources\old\54_GTKG_Rangeland.jpg" />
+    <Content Include="Content\images\resources\old\55_GTKG_Carcase.jpg" />
+    <Content Include="Content\images\resources\old\56_HT_DuncanWelgemoedLamb.jpg" />
+    <Content Include="Content\images\resources\old\57_HT_DuncanWelgemoedBeef.jpg" />
+    <Content Include="Content\images\resources\old\58_HT_MikeEggertLamb.jpg" />
+    <Content Include="Content\images\resources\old\59_HT_MikeEggertBeef.jpg" />
+    <Content Include="Content\images\resources\old\60_HT_JakeSmythLamb.jpg" />
+    <Content Include="Content\images\resources\old\61_HT_JakeSmythBeef.jpg" />
+    <Content Include="Content\images\resources\old\62_HT_DanielleAlvarezLamb.jpg" />
+    <Content Include="Content\images\resources\old\63_HT_DanielleAlvarezBeef.jpg" />
+    <Content Include="Content\images\resources\old\64_HT_AaronWardLamb.jpg" />
+    <Content Include="Content\images\resources\old\65_HT_AaronWardBeef.jpg" />
+    <Content Include="Content\images\resources\resized\JPEG\01_MCC_EP1.jpg" />
+    <Content Include="Content\images\resources\resized\JPEG\02_MCC_EP2.jpg" />
+    <Content Include="Content\images\resources\resized\JPEG\03_MCC_EP3.jpg" />
+    <Content Include="Content\images\resources\resized\JPEG\04_MCC_EP4.jpg" />
+    <Content Include="Content\images\resources\resized\JPEG\05_MCC_EP5.jpg" />
+    <Content Include="Content\images\resources\resized\JPEG\06_MCC_EP6.jpg" />
+    <Content Include="Content\images\scroll-blue-mb.png" />
+    <Content Include="Content\images\scroll-blue.png" />
+    <Content Include="Content\images\scroll-dt-mb.png" />
+    <Content Include="Content\images\scroll-gold-mb.png" />
+    <Content Include="Content\images\scroll-gold.png" />
+    <Content Include="Content\images\scroll-green-mb.png" />
+    <Content Include="Content\images\scroll-green.png" />
+    <Content Include="Content\images\scroll-mb.png" />
+    <Content Include="Content\images\scroll-mouse.png" />
+    <Content Include="Content\images\scroll-yellow-mb.png" />
+    <Content Include="Content\images\scroll-yellow.png" />
+    <Content Include="Content\images\scroll.png" />
+    <Content Include="Content\images\scroll_lg.png" />
+    <Content Include="Content\images\search-icon.svg" />
+    <Content Include="Content\images\social\facebook.svg" />
+    <Content Include="Content\images\social\instagram.svg" />
+    <Content Include="Content\images\social\youtube.svg" />
+    <Content Include="Content\images\source.svg" />
+    <Content Include="Content\images\SVG\Asset 1.svg" />
+    <Content Include="Content\images\temp-youtube.jpg" />
+    <Content Include="Content\images\timer.gif" />
+    <Content Include="Content\images\tmp-ageing-intro.jpg" />
+    <Content Include="Content\images\tmp-cuts-of-meat.png" />
+    <Content Include="Content\images\tmp-insta-1.jpg" />
+    <Content Include="Content\images\tmp-insta-2.jpg" />
+    <Content Include="Content\images\tmp-insta-3.jpg" />
+    <Content Include="Content\images\tmp-insta-4.jpg" />
+    <Content Include="Content\images\tmp-processing-intro.jpg" />
+    <Content Include="Content\images\tmp-production-feedlot-intro.jpg" />
+    <Content Include="Content\images\tmp-progress.png" />
+    <Content Include="Content\images\tmp-protein-beef.jpg" />
+    <Content Include="Content\images\tmp-qa-programs-cows.jpg" />
+    <Content Include="Content\images\tmp-qa-programs-intro.jpg" />
+    <Content Include="Content\images\tmp-qa-programs-sheeps.jpg" />
+    <Content Include="Content\images\tmp-qa-standards-intro.jpg" />
+    <Content Include="Content\images\tmp-sheep.jpg" />
+    <Content Include="Content\images\tmp-sustainability-animals.jpg" />
+    <Content Include="Content\images\tmp-sustainability-intro.jpg" />
+    <Content Include="Content\images\tmp-sustainability-workers.jpg" />
+    <Content Include="Content\images\tmp-wet-ageing.jpg" />
+    <Content Include="Content\images\underline-blue.svg" />
+    <Content Include="Content\images\underline-gold.svg" />
+    <Content Include="Content\images\underline-green.svg" />
+    <Content Include="Content\images\underline-yellow.svg" />
+    <Content Include="Content\images\underline.svg" />
+    <Content Include="Content\images\videos\01_MCC_EP1.jpg" />
+    <Content Include="Content\images\videos\02_MCC_EP2.jpg" />
+    <Content Include="Content\images\videos\03_MCC_EP3.jpg" />
+    <Content Include="Content\images\videos\04_MCC_EP4.jpg" />
+    <Content Include="Content\images\videos\05_MCC_EP5.jpg" />
+    <Content Include="Content\images\videos\06_MCC_EP6.jpg" />
+    <Content Include="Content\images\videos\07_MCC_EP7.jpg" />
+    <Content Include="Content\images\videos\08_MCC_EP8.jpg" />
+    <Content Include="Content\images\videos\09_MCC_EP9.jpg" />
+    <Content Include="Content\images\videos\10_MCC_EP10.jpg" />
+    <Content Include="Content\images\videos\11_CBTS_Dan&amp;Mitch.jpg" />
+    <Content Include="Content\images\videos\12_Jordan&amp;Vlad.jpg" />
+    <Content Include="Content\images\videos\13_CBTS_Michael&amp;Chris.jpg" />
+    <Content Include="Content\images\videos\14_CBTS_Andrew&amp;Russell.jpg" />
+    <Content Include="Content\images\videos\15_CBTS_Mike&amp;Paul.jpg" />
+    <Content Include="Content\images\videos\16_CBTS_Dan&amp;Patrick.jpg" />
+    <Content Include="Content\images\videos\17_CBTS_Amber&amp;Michael.jpg" />
+    <Content Include="Content\images\videos\18_CBTS_Andrew&amp;Paul.jpg" />
+    <Content Include="Content\images\videos\20_CBTS_Mitch&amp;Jordan.jpg" />
+    <Content Include="Content\images\videos\21_CBTS_JesseMcTavish.jpg" />
+    <Content Include="Content\images\videos\22_CTW_OysterBlade.jpg" />
+    <Content Include="Content\images\videos\23_CTW_LambBelly.jpg" />
+    <Content Include="Content\images\videos\24_CTW_Brisket.jpg" />
+    <Content Include="Content\images\videos\25_CTW_LambRump.jpg" />
+    <Content Include="Content\images\videos\26_CTW_FestiveBeef&amp;Lamb.jpg" />
+    <Content Include="Content\images\videos\27_CTW_GoatShoulder.jpg" />
+    <Content Include="Content\images\videos\28_WCB_Beef.jpg" />
+    <Content Include="Content\images\videos\29_WCB_Lamb.jpg" />
+    <Content Include="Content\images\videos\30_WCB_Goat.jpg" />
+    <Content Include="Content\images\videos\31_PTP_BestBloodySteak.jpg" />
+    <Content Include="Content\images\videos\32_PTP_BetterThePlate.jpg" />
+    <Content Include="Content\images\videos\33_PTP_IntoThePaddock.jpg" />
+    <Content Include="Content\images\videos\34_PTP_BigBeef.jpg" />
+    <Content Include="Content\images\videos\35_CP_Embla.jpg" />
+    <Content Include="Content\images\videos\36_CP_Africola.jpg" />
+    <Content Include="Content\images\videos\37_CP_Momofuku.jpg" />
+    <Content Include="Content\images\videos\38_CP_JordanToft.jpg" />
+    <Content Include="Content\images\videos\39_CS_LambLeg.jpg" />
+    <Content Include="Content\images\videos\40_CS_BeefRump.jpg" />
+    <Content Include="Content\images\videos\41_CS_LambChump.jpg" />
+    <Content Include="Content\images\videos\42_CS_SummerSteaks.jpg" />
+    <Content Include="Content\images\videos\43_DU10_LambSilverside.jpg" />
+    <Content Include="Content\images\videos\44_DU10_LambRump.jpg" />
+    <Content Include="Content\images\videos\45_DU10_RumpCapHarissa.jpg" />
+    <Content Include="Content\images\videos\46_DU10_RumpCapRadicchio.jpg" />
+    <Content Include="Content\images\videos\47_DU10_LambCeviche.jpg" />
+    <Content Include="Content\images\videos\48_DU10_JerkLamb.jpg" />
+    <Content Include="Content\images\videos\49_DU10_BeefRibs.jpg" />
+    <Content Include="Content\images\videos\50_DU10_Kibbe.jpg" />
+    <Content Include="Content\images\videos\51_Roadies1.jpg" />
+    <Content Include="Content\images\videos\52_Roadies2.jpg" />
+    <Content Include="Content\images\videos\53_GTKG_Farmed.jpg" />
+    <Content Include="Content\images\videos\54_GTKG_Rangeland.jpg" />
+    <Content Include="Content\images\videos\55_GTKG_Carcase.jpg" />
+    <Content Include="Content\images\videos\56_HT_DuncanWelgemoedLamb.jpg" />
+    <Content Include="Content\images\videos\57_HT_DuncanWelgemoedBeef.jpg" />
+    <Content Include="Content\images\videos\58_HT_MikeEggertLamb.jpg" />
+    <Content Include="Content\images\videos\59_HT_MikeEggertBeef.jpg" />
+    <Content Include="Content\images\videos\60_HT_JakeSmythLamb.jpg" />
+    <Content Include="Content\images\videos\61_HT_JakeSmythBeef.jpg" />
+    <Content Include="Content\images\videos\62_HT_DanielleAlvarezLamb.jpg" />
+    <Content Include="Content\images\videos\63_HT_DanielleAlvarezBeef.jpg" />
+    <Content Include="Content\images\videos\64_HT_AaronWardLamb.jpg" />
+    <Content Include="Content\images\videos\65_HT_AaronWardBeef.jpg" />
+    <Content Include="Content\images\videos\66_no_stone_unturned.jpg" />
+    <Content Include="Content\images\videos\67-WA-Roadtrip.jpg" />
+    <Content Include="Content\images\videos\68-SanDiego-Roadtrip.jpg" />
+    <Content Include="Content\images\videos\69-Gwens-Sandwich.jpg" />
+    <Content Include="Content\images\videos\70-Gwens-Pie.jpg" />
+    <Content Include="Content\images\videos\71-LA-Tacos.jpg" />
+    <Content Include="Content\images\videos\72-LA-French-Dip.jpg" />
+    <Content Include="Content\images\videos\73-LA-Guy_Turland.jpg" />
+    <Content Include="Content\images\videos\74-Austin-Jess.jpg" />
+    <Content Include="Content\images\videos\75-Miami-Janine-Jeff.jpg" />
+    <Content Include="Content\images\videos\76-Philly-Joe-Pizza.jpg" />
+    <Content Include="Content\images\videos\77-Chicago-Liz.jpg" />
+    <Content Include="Content\images\videos\78-CP-Peter-Gunn.jpg" />
+    <Content Include="Content\images\videos\79-PTP-LambPro.jpg" />
+    <Content Include="Content\images\videos\80-Roadies-5.jpg" />
+    <Content Include="Content\images\videos\81-Glazed-Lamb-Ribs.jpg" />
+    <Content Include="Content\images\videos\82-Herb-Crusted-lamb.jpg" />
+    <Content Include="Content\images\videos\83-Lamb-Belly-Brest.jpg" />
+    <Content Include="Content\images\videos\84-A1SaltBeefBagel.jpg" />
+    <Content Include="Content\images\videos\85-NaturallyFallingForYou.jpg" />
+    <Content Include="Content\images\videos\86-ButteredBeefTripePasta.jpg" />
+    <Content Include="Content\images\videos\87-StopCollaborateandQuestion.jpg" />
+    <Content Include="Content\images\videos\88-Roadies6-TrippinaroundTassie.jpg" />
+    <Content Include="Content\images\videos\89-AllswellthatendsWells.jpg" />
+    <Content Include="Content\images\videos\90-ChefChallangeSunda.jpg" />
+    <Content Include="Content\images\videos\91-ChefChallangeAfricola.jpg" />
+    <Content Include="Content\images\videos\92-ChefChallangeFreds.jpg" />
+    <Content Include="Content\images\videos\93-ChefChallangeTomMcHugos.jpg" />
+    <Content Include="Content\images\videos\94-ChefChallange3BlueDucks.jpg" />
+    <Content Include="Content\images\watch-360.svg" />
+    <Content Include="Content\images\watch-the-video-figcaption.png" />
+    <Content Include="Content\images\youtube.png" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Content\images\cut-charts\downloads\Beef.pdf" />
+    <Content Include="Content\images\cut-charts\downloads\Goat.pdf" />
+    <Content Include="Content\images\cut-charts\downloads\Lamb.pdf" />
+    <Content Include="Content\images\cut-charts\downloads\MLA_CutsChart_Poster_Beef.pdf" />
+    <Content Include="Content\images\cut-charts\downloads\MLA_CutsChart_Poster_Goat.pdf" />
+    <Content Include="Content\images\cut-charts\downloads\MLA_CutsChart_Poster_Lamb.pdf" />
+    <Content Include="Content\images\cut-charts\downloads\MLA_CutsChart_Poster_Veal.pdf" />
+    <Content Include="Content\images\cut-charts\downloads\Veal.pdf" />
+    <None Include="EPiServerLog.config" />
+    <Content Include="modules\_protected\Shell\web.config" />
+    <Content Include="modules\_protected\Shell\Shell.zip" />
+    <Content Include="modules\_protected\CMS\web.config" />
+    <Content Include="modules\_protected\CMS\CMS.zip" />
+    <Content Include="modules\_protected\EPiServer.Cms.TinyMce\web.config" />
+    <Content Include="modules\_protected\EPiServer.Cms.TinyMce\EPiServer.Cms.TinyMce.zip" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\MasterClass\Index.cshtml" />
+    <Content Include="Views\ProTips\Index.cshtml" />
+    <Content Include="Views\MeatAustrallia\Index.cshtml" />
+    <Content Include="Views\ProducerToPlate\Index.cshtml" />
+    <Content Include="Views\MasterClass_LowSlow\Index.cshtml" />
+    <Content Include="Views\MC_SummerLamb\Index.cshtml" />
+    <Content Include="Views\MC_TravelSolutions\Index.cshtml" />
+    <Content Include="Views\MCWOK_Cooking\Index.cshtml" />
+    <Content Include="Views\MC_CurriesTagines\Index.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49159/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

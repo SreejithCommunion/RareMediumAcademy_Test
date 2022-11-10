@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/masterclass.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body style="background-color:black;">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h2 style="color:white;">@*RARE MEDIUM*@</h2>
+                @*<h4 style="color:white;">Academy</h4>*@
+                @*@Html.ActionLink("RARE MEDIUM Academy", "RARE MEDIUM Academy", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+            </div>
+        </div>
+        <div class="headerlogo-mla">
+            <img src="~/Content/images/Logos/raremediumacademy_logofooter.png" width="135px" height="90px" alt="Raremedium Academy">
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <footer class="footer">
+            <div class="inner">
+                <div class="footer-top">
+                    <div class="logo-mla">
+                        <a href="/">
+                            <img src="/Content/images/Logos/raremediumacademy_logofooter.png" width="135px" height="90px" alt="Raremedium Academy">
+                        </a>
+                    </div>
+
+                    <div>
+                        <div class="row clearfix">
+                            <div class="block linklistblock percent-100 scrollTarget_716bedc9-c2e2-46f0-88ab-2e7267a28258   ">
+                                <div class="general-links">
+                                    <ul>
+                                        <li><a href="https://raremedium.com.au/cookies-policy/">cookies</a></li>
+                                        <li><a href="https://raremedium.com.au/Terms-of-Use/">terms of use</a></li>
+                                        <li><a href="https://raremedium.com.au/privacy/">privacy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <div class="row clearfix">
+                            <div class="block linklistblock percent-100 scrollTarget_f04b5307-887e-4480-a75c-10318eea2d28   ">
+                                <div class="social">
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="https://www.linkedin.com/showcase/rare-medium-academy/?viewAsMember=true" title="linkedin" target="_blank" rel="nofollow">
+                                                <i></i>
+                                                <span>linkedin</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.youtube.com/channel/UCRoz3_1Gjdd6WzelGE6zmtA?view_as=subscriber" title="youtube" target="_blank" rel="nofollow">
+                                                <i></i>
+                                                <span>youtube</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/raremediumacademy/" title="instagram" target="_blank" rel="nofollow">
+                                                <i></i>
+                                                <span>instagram</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/RareMediumAcademy/" title="facebook" target="_blank" rel="nofollow">
+                                                <i></i>
+                                                <span>facebook</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

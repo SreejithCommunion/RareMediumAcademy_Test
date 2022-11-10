@@ -1,0 +1,263 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 43.33%;
+    padding: 20px;
+}
+.mccolumn {
+    float: left;
+    width: 50%;
+}
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 195%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle1 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 195%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.column:hover .image {
+    opacity: 0.3;
+}
+
+.column:hover .middle {
+    opacity: 1;
+}
+.column:hover .middle1 {
+    opacity: 1;
+}
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    padding: 10px 47px 10px 41px;
+    border-radius: 20px;
+}
+.text1 {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 0px 25px 43px 12px;
+    border-radius: 20px;
+}
+
+
+footer 
+{    
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+}
+
+footer ul 
+{
+    margin: 0 auto;
+}
+
+footer li 
+{
+    display: inline-block;
+    list-style-type: none;
+    line-height: 9px;
+    border-right: 1px solid #354052;
+    padding: 0 10px;
+}
+
+    footer li:last-child {
+        border-right: none;
+    }
+        footer li a {
+            font-weight:400;
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            text-transform:uppercase;
+        }
+
+.headerlogo-mla {
+    position: static;
+    display: block;
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    text-align: center;
+}
+
+.logo-mla {
+    position: static;
+    display: block;
+    padding: 50px 0 20px;
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.hero.display-one .inner,
+.hero.display-two .inner,
+.hero.display-three .inner {
+    height: 460px;
+    max-width: 410px;
+    text-align: center;
+}
+
+.hero.display-two .inner {
+    max-width: 410px;
+}
+
+.hero.display-two .hero-panel {
+    float: left;
+    min-height: 1px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.hero.display-three .hero-panel,
+.hero.display-three .hero-panel-wrap {
+    float: left;
+    min-height: 1px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+    .hero.display-three .hero-panel .hero-panel,
+    .hero.display-three .hero-panel-wrap .hero-panel {
+        width: 100%;
+    }
+
+        .hero.display-three .hero-panel .hero-panel .inner,
+        .hero.display-three .hero-panel-wrap .hero-panel .inner {
+            height: 230px;
+            max-width: 320px;
+        }
+
+.hero .title {
+    padding: 20px 0;
+    font-size: 39px;
+    line-height: 39px;
+}
+
+    .hero .title span {
+        font-size: 12px;
+    }
+
+.hero {
+    position: relative;
+    text-align: center;
+    background: #000;
+}
+
+    .hero .container {
+        display: table;
+        margin: 0 auto;
+    }
+
+    .hero .inner {
+        display: table-cell;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+
+    .hero.display-one .inner,
+    .hero.display-two .inner,
+    .hero.display-three .inner {
+        height: 345px;
+        max-width: 275px;
+    }
+
+    .hero .hero-panel {
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        opacity: 1;
+    }
+
+        .hero .hero-panel:hover .pattern {
+            transition: all 300ms linear;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+    .hero .title {
+        margin: 0;
+        padding: 10px 0;
+        text-transform: uppercase;
+        -ms-text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+        -webkit-text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+        font: 700 26px 'polly_roundedregular', serif;
+        color: #fff;
+    }
+
+        .hero .title span {
+            display: block;
+            margin-bottom: 5px;
+            font: 700 8px 'polly_roundedlight', serif;
+            letter-spacing: 2px;
+        }
+
+    .hero .btn {
+        background: #fff;
+        color: #000000;
+        border-color: #fff;
+    }
