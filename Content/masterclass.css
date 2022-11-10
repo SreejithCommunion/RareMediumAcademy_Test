@@ -212,84 +212,84 @@ Icon classes can be used entirely standalone. They are named after their origina
   color: #fff;
 }
 .icon-Tencent {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -367px -18px;
-  width: 25px;
-  height: 25px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -367px -18px;
+    width: 25px;
+    height: 25px;
 }
 .icon-WeChat {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -542px -18px;
-  width: 25px;
-  height: 25px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -542px -18px;
+    width: 25px;
+    height: 25px;
 }
 .icon-Weibo {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -592px -18px;
-  width: 25px;
-  height: 25px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -592px -18px;
+    width: 25px;
+    height: 25px;
 }
 .icon-addthis {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -392px -18px;
-  width: 25px;
-  height: 25px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -392px -18px;
+    width: 25px;
+    height: 25px;
 }
 .icon-arrow-left-beef,
 .carousel.beef .customNavigation .prev {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: 0px -88px;
-  width: 11px;
-  height: 31px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: 0px -88px;
+    width: 11px;
+    height: 31px;
 }
 .icon-arrow-left-goat,
 .carousel.goat .customNavigation .prev {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -22px -88px;
-  width: 11px;
-  height: 31px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -22px -88px;
+    width: 11px;
+    height: 31px;
 }
 .icon-arrow-left-lamb,
 .carousel.lamb .customNavigation .prev {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -11px -88px;
-  width: 11px;
-  height: 31px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -11px -88px;
+    width: 11px;
+    height: 31px;
 }
 .icon-arrow-left,
 .carousel .customNavigation .prev {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -33px -88px;
-  width: 11px;
-  height: 31px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -33px -88px;
+    width: 11px;
+    height: 31px;
 }
 .icon-arrow-right-beef,
 .carousel.beef .customNavigation .next {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -44px -88px;
-  width: 11px;
-  height: 31px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -44px -88px;
+    width: 11px;
+    height: 31px;
 }
 .icon-arrow-right-goat,
 .carousel.goat .customNavigation .next {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -77px -88px;
-  width: 11px;
-  height: 31px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -77px -88px;
+    width: 11px;
+    height: 31px;
 }
 .icon-arrow-right-lamb,
 .carousel.lamb .customNavigation .next {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -55px -88px;
-  width: 11px;
-  height: 31px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -55px -88px;
+    width: 11px;
+    height: 31px;
 }
 .icon-arrow-right,
 .carousel .customNavigation .next {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -66px -88px;
-  width: 11px;
-  height: 31px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -66px -88px;
+    width: 11px;
+    height: 31px;
 }
 
 /* 
@@ -302,10 +302,10 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 
 .icon-burger-menu-mob {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -196px -18px;
-  width: 51px;
-  height: 37px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -196px -18px;
+    width: 51px;
+    height: 37px;
 }
 .icon-burger-menu {
   width: 25px;
@@ -313,27 +313,27 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-chev-right,
 .more-recipes a:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -89px -61px;
-  width: 6px;
-  height: 17px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -89px -61px;
+    width: 6px;
+    height: 17px;
 }
 .icon-close-content,
 .accordion .accordion-title.open:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -970px -21px;
-  width: 8px;
-  height: 3px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -970px -21px;
+    width: 8px;
+    height: 3px;
 }
 .icon-dots-beef,
 .beef .heading-dots:after,
 .beef .heading-dots-both:before,
 .beef .heading-dots-both:after,
 .full-screen-menu.beef nav ul li a:hover:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -935px -18px;
-  width: 58px;
-  height: 2px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -935px -18px;
+    width: 58px;
+    height: 2px;
 }
 .icon-dots-default,
 .heading-dots:after,
@@ -341,17 +341,17 @@ Icon classes can be used entirely standalone. They are named after their origina
 .heading-dots-grey:after,
 .heading-dots-both:before,
 .heading-dots-both:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -1051px -18px;
-  width: 58px;
-  height: 2px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -1051px -18px;
+    width: 58px;
+    height: 2px;
 }
 .icon-dots-goat,
 .goat .heading-dots:after,
 .goat .heading-dots-both:before,
 .goat .heading-dots-both:after,
 .full-screen-menu.goat nav ul li a:hover:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
+  background-image: url(/Content/images/abg_sprites.png);
   background-position: -877px -18px;
   width: 58px;
   height: 2px;
@@ -359,88 +359,88 @@ Icon classes can be used entirely standalone. They are named after their origina
 .icon-dots-grey,
 .heading-dots-grey:after,
 .full-screen-menu .secondary-nav > ul > li > a:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -1167px -18px;
-  width: 58px;
-  height: 2px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -1167px -18px;
+    width: 58px;
+    height: 2px;
 }
 .icon-dots-lamb,
 .lamb .heading-dots:after,
 .lamb .heading-dots-both:before,
 .lamb .heading-dots-both:after,
 .full-screen-menu.lamb nav ul li a:hover:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -1109px -18px;
-  width: 58px;
-  height: 2px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -1109px -18px;
+    width: 58px;
+    height: 2px;
 }
 .icon-dots-white,
 .heading-dots-white:after,
 .full-screen-menu nav ul li a:after,
 .protein-cut .recipe-panel p.info:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -993px -18px;
-  width: 58px;
-  height: 2px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -993px -18px;
+    width: 58px;
+    height: 2px;
 }
 .icon-down-arrow,
 .recipe-filters .filters > li > span:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -814px -21px;
-  width: 16px;
-  height: 9px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -814px -21px;
+    width: 16px;
+    height: 9px;
 }
 .icon-facebook {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -617px -18px;
-  width: 25px;
-  height: 25px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -617px -18px;
+    width: 25px;
+    height: 25px;
 }
 .icon-goathead {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -291px -18px;
-  width: 35px;
-  height: 31px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -291px -18px;
+    width: 35px;
+    height: 31px;
 }
 .icon-heading-pattern {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -798px -18px;
-  width: 79px;
-  height: 3px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -798px -18px;
+    width: 79px;
+    height: 3px;
 }
 .icon-instagram {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -567px -18px;
-  width: 25px;
-  height: 25px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -567px -18px;
+    width: 25px;
+    height: 25px;
 }
 .icon-knife-beef,
 .landing-intro-block.beef .icon-knife {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -681px -18px;
-  width: 39px;
-  height: 14px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -681px -18px;
+    width: 39px;
+    height: 14px;
 }
 .icon-knife-default,
 .landing-intro-block .icon-knife {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -720px -18px;
-  width: 39px;
-  height: 14px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -720px -18px;
+    width: 39px;
+    height: 14px;
 }
 .icon-knife-goat,
 .landing-intro-block.goat .icon-knife {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -642px -18px;
-  width: 39px;
-  height: 14px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -642px -18px;
+    width: 39px;
+    height: 14px;
 }
 .icon-knife-lamb,
 .landing-intro-block.lamb .icon-knife {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -759px -18px;
-  width: 39px;
-  height: 14px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -759px -18px;
+    width: 39px;
+    height: 14px;
 }
 
 /*
@@ -455,16 +455,16 @@ Icon classes can be used entirely standalone. They are named after their origina
 .icon-long-dots-beef,
 .beef .long-dots,
 .quote.beef blockquote:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -151px -12px;
-  width: 1200px;
-  height: 3px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -151px -12px;
+    width: 1200px;
+    height: 3px;
 }
 .icon-long-dots-black {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -151px -6px;
-  width: 1200px;
-  height: 3px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -151px -6px;
+    width: 1200px;
+    height: 3px;
 }
 .icon-long-dots-default,
 .long-dots,
@@ -477,24 +477,24 @@ Icon classes can be used entirely standalone. They are named after their origina
 .icon-long-dots-goat,
 .goat .long-dots,
 .quote.goat blockquote:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -151px -15px;
-  width: 1200px;
-  height: 3px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -151px -15px;
+    width: 1200px;
+    height: 3px;
 }
 .icon-long-dots-lamb,
 .lamb .long-dots,
 .quote.lamb blockquote:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -151px 0px;
-  width: 1200px;
-  height: 3px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -151px 0px;
+    width: 1200px;
+    height: 3px;
 }
 .icon-long-dots-white {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -151px -3px;
-  width: 1200px;
-  height: 3px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -151px -3px;
+    width: 1200px;
+    height: 3px;
 }
 .icon-menu-close,
 .header .menu-toggle a.open .icon-burger-menu {
@@ -504,148 +504,148 @@ Icon classes can be used entirely standalone. They are named after their origina
   height: 25px;
 }
 .icon-minus {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -1225px -18px;
-  width: 15px;
-  height: 2px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -1225px -18px;
+    width: 15px;
+    height: 2px;
 }
 .icon-open-content,
 .accordion .accordion-title:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -642px -32px;
-  width: 8px;
-  height: 8px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -642px -32px;
+    width: 8px;
+    height: 8px;
 }
 .icon-pinterest {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -442px -18px;
-  width: 25px;
-  height: 25px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -442px -18px;
+    width: 25px;
+    height: 25px;
 }
 .icon-plus {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -194px -62px;
-  width: 15px;
-  height: 15px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -194px -62px;
+    width: 15px;
+    height: 15px;
 }
 .icon-search {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -176px -62px;
-  width: 18px;
-  height: 18px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -176px -62px;
+    width: 18px;
+    height: 18px;
 }
 .icon-smaller-dots-beef,
 .beef .heading-smaller-dots:after,
 .beef .heading-smaller-dots-both:before,
 .beef .heading-smaller-dots-both:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -914px -21px;
-  width: 28px;
-  height: 3px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -914px -21px;
+    width: 28px;
+    height: 3px;
 }
 .icon-smaller-dots-default,
 .heading-smaller-dots:after,
 .heading-smaller-dots-both:before,
 .heading-smaller-dots-both:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -886px -21px;
-  width: 28px;
-  height: 3px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -886px -21px;
+    width: 28px;
+    height: 3px;
 }
 .icon-smaller-dots-goat,
 .goat .heading-smaller-dots:after,
 .goat .heading-smaller-dots-both:before,
 .goat .heading-smaller-dots-both:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -858px -21px;
-  width: 28px;
-  height: 3px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -858px -21px;
+    width: 28px;
+    height: 3px;
 }
 .icon-smaller-dots-lamb,
 .lamb .heading-smaller-dots:after,
 .lamb .heading-smaller-dots-both:before,
 .lamb .heading-smaller-dots-both:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -830px -21px;
-  width: 28px;
-  height: 3px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -830px -21px;
+    width: 28px;
+    height: 3px;
 }
 .icon-smaller-dots-white,
 .internal-nav ul li a:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -942px -21px;
-  width: 28px;
-  height: 3px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -942px -21px;
+    width: 28px;
+    height: 3px;
 }
 .icon-twitter {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -417px -18px;
-  width: 25px;
-  height: 25px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -417px -18px;
+    width: 25px;
+    height: 25px;
 }
 .icon-up-arrow,
 .recipe-filters .filters > li > span.open:after {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -798px -21px;
-  width: 16px;
-  height: 9px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -798px -21px;
+    width: 16px;
+    height: 9px;
 }
 .icon-url-icon-back {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -209px -62px;
-  width: 13px;
-  height: 13px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -209px -62px;
+    width: 13px;
+    height: 13px;
 }
 .icon-url-icon-default {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -222px -62px;
-  width: 13px;
-  height: 13px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -222px -62px;
+    width: 13px;
+    height: 13px;
 }
 .icon-url-icon-grey,
 .faq-summary ul li a:before {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -235px -62px;
-  width: 13px;
-  height: 13px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -235px -62px;
+    width: 13px;
+    height: 13px;
 }
 .icon-url-icon,
 ul.icons li a:before {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -248px -62px;
-  width: 13px;
-  height: 13px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -248px -62px;
+    width: 13px;
+    height: 13px;
 }
 .icon-video-play-large {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: 0px 0px;
-  width: 89px;
-  height: 88px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: 0px 0px;
+    width: 89px;
+    height: 88px;
 }
 .icon-video-play-mobile,
 .video .icon-video-play-large {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -151px -18px;
-  width: 45px;
-  height: 44px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -151px -18px;
+    width: 45px;
+    height: 44px;
 }
 .icon-video-play {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -89px 0px;
-  width: 62px;
-  height: 61px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -89px 0px;
+    width: 62px;
+    height: 61px;
 }
 .icon-yelp {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -492px -18px;
-  width: 25px;
-  height: 25px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -492px -18px;
+    width: 25px;
+    height: 25px;
 }
 .icon-youtube {
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -517px -18px;
-  width: 25px;
-  height: 25px;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -517px -18px;
+    width: 25px;
+    height: 25px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .icon-Tencent {
@@ -2080,32 +2080,32 @@ textarea {
 *
 */
 #navigation-toggle {
-  float: right;
-  width: 60px;
-  height: 60px;
-  display: block;
-  background: url(../../../images/abg_sprites.png) no-repeat;
-  background-position: 0 -60px;
-  background-color: none;
-  text-indent: -9999px;
-  /* 1 */
+    float: right;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background: url(../../../Content/images/abg_sprites.png) no-repeat;
+    background-position: 0 -60px;
+    background-color: none;
+    text-indent: -9999px;
+    /* 1 */
 }
 #navigation-toggle.active {
   background-position: -60px -60px;
   background-color: #666;
 }
 ul.navigation a .toggle-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 40px;
-  width: 60px;
-  display: block;
-  background: url(../../../images/abg_sprites.png) no-repeat;
-  background-position: 5px -115px;
-  background-color: none;
-  text-indent: -9999px;
-  /* 1 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 60px;
+    display: block;
+    background: url(../../../Content/images/abg_sprites.png) no-repeat;
+    background-position: 5px -115px;
+    background-color: none;
+    text-indent: -9999px;
+    /* 1 */
 }
 ul.navigation a.active .toggle-icon {
   background-position: -180px -120px;
@@ -5335,17 +5335,17 @@ footer .general-links ul li a:hover {
     font-size: 12px;
     line-height: 1;
   }
-  .video .icon-video-play-large {
-    margin-top: 20px;
-    background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-    background-position: -89px 0px;
-    width: 62px;
-    height: 61px;
-    text-indent: -9999px;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-  }
+    .video .icon-video-play-large {
+        margin-top: 20px;
+        background-image: url(/Content/images/abg_sprites.png);
+        background-position: -89px 0px;
+        width: 62px;
+        height: 61px;
+        text-indent: -9999px;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
 }
 /* Desktop media query
    ========================================================================== */
@@ -5357,17 +5357,17 @@ footer .general-links ul li a:hover {
   .video .content .title span {
     font-size: 16px;
   }
-  .video .icon-video-play-large {
-    margin-top: 30px;
-    background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-    background-position: 0px 0px;
-    width: 89px;
-    height: 88px;
-    text-indent: -9999px;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-  }
+    .video .icon-video-play-large {
+        margin-top: 30px;
+        background-image: url(/Content/images/abg_sprites.png);
+        background-position: 0px 0px;
+        width: 89px;
+        height: 88px;
+        text-indent: -9999px;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
 }
 /* Retina media query
    ========================================================================== */
@@ -6535,14 +6535,14 @@ footer .general-links ul li a:hover {
   width: 100%;
 }
 .recipe-detail-content .detail-instructions:before {
-  content: '';
-  display: block!important;
-  background-image: url(/site.resource/mlainternational/images/abg_sprites.png);
-  background-position: -151px -6px;
-  width: 1200px;
-  height: 3px;
-  width: 150px;
-  margin: 10px auto;
+    content: '';
+    display: block !important;
+    background-image: url(/Content/images/abg_sprites.png);
+    background-position: -151px -6px;
+    width: 1200px;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
 }
 .recipe-detail-content h3 {
   margin-bottom: 15px;

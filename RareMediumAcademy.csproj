@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -26,6 +27,8 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,10 +55,10 @@
       <HintPath>packages\Castle.Windsor.4.1.0\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer, Version=11.15.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>packages\EPiServer.CMS.Core.11.15.1\lib\net461\EPiServer.dll</HintPath>
@@ -216,15 +219,20 @@
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
+    <Content Include="Content\images\abg_sprites.png" />
     <Content Include="Content\images\Logos\masterclass.jpg" />
     <Content Include="Content\images\Logos\msa.jpg" />
     <Content Include="Content\images\Logos\producertoplate.jpg" />
     <Content Include="Content\images\Logos\protips.jpg" />
     <Content Include="Content\images\Logos\recepies.jpg" />
     <Content Include="Content\images\MasterClass\Curries_Tagines\MC_CurriesTagines.png" />
+    <Content Include="Content\images\MasterClass\GrabNGo\GrabNGo_Banner.png" />
+    <Content Include="Content\images\MasterClass\GreatSneaks\MC_GreatSteaks_Banner.png" />
     <Content Include="Content\images\MasterClass\LowSlow\lowslow_Banner.jpg" />
     <Content Include="Content\images\MasterClass\MasteringWokCooking\MCWOK_Cooking_Banner.png" />
+    <Content Include="Content\images\MasterClass\RoastsCarvery\roastscarvery_banner.png" />
     <Content Include="Content\images\MasterClass\SummerLamb\summer_lamb_banner.jpg" />
+    <Content Include="Content\images\MasterClass\SustainableMenu\SustainableMenu_Banner.png" />
     <Content Include="Content\images\MasterClass\TravelSolutions\travelsolutions_Banner.png" />
     <Content Include="Content\images\MasterClass\TravelSolutions\travelsolutions_Banner_1.jpg" />
     <Content Include="Content\images\MSA\msa-banners-2.jpg" />
@@ -238,6 +246,76 @@
     <Content Include="Content\images\ProducerToPlate\PTPBanner_7.png" />
     <Content Include="Content\images\ProducerToPlate\PTPBanner_8.png" />
     <Content Include="Content\images\ProducerToPlate\PTPBanner_9.png" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\beef-curry.png" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\beef-noodle.png" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\beef-oxtail.jpg" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\beef-protips_apera.png" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\beef-protips_brisket_shuu.png" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\beef-protips_shin_orreciatte.png" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\flank-steak.jpg" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\japanese-short-rib.jpg" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\protips_perfect-steak.jpg" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\protips_silverside.jpg" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\standing-rib-roast.jpg" />
+    <Content Include="Content\images\Pro_Tips\Cuts_ProTips\Cuts_BeefRibSet.png" />
+    <Content Include="Content\images\Pro_Tips\Cuts_ProTips\Cuts_BladeCut.png" />
+    <Content Include="Content\images\Pro_Tips\Cuts_ProTips\Cuts_ChuckCut.png" />
+    <Content Include="Content\images\Pro_Tips\Cuts_ProTips\Cuts_LambButchery.jpg" />
+    <Content Include="Content\images\Pro_Tips\Cuts_ProTips\Cuts_MSA_cut.png" />
+    <Content Include="Content\images\Pro_Tips\Cuts_ProTips\Cuts_oyster_blade_cut.png" />
+    <Content Include="Content\images\Pro_Tips\Industry_ProTips\scott-grave.png" />
+    <Content Include="Content\images\Pro_Tips\Industry_ProTips\sean-hall.png" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\lamb-gochujang-ribs.jpg" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\lamb-mousakka.jpg" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\lamb-ragu.jpg" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\lamb-rump-salad.jpg" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\lamb-shank-polenta.jpg" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\lamb-shoulder-masterstock.jpg" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\lamb_butterfly_leg.jpg" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\lamb_chops_roti.jpg" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\lamb_larb.jpg" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\plated-lamb-cutlet-croquette.jpg" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\beef-tenderloin.jpg" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\outdoor-wok-rmof.jpg" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\overflames_butterfy-lamb-leg.jpg" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\overflames_lamb-adana.jpg" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\overflames_lamb-arostini.jpg" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\rmof-beef-rump-caps.jpg" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\rmof-bistecca-florentina.jpg" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\rmof-low-slow-beef-short-ribs.jpg" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\rmof-masterstock-lamb-ribs.jpg" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\rmof-woodfired-tomohawks.jpg" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\rmof_goat_pealla.jpg" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\rmof_lamb-pizza.jpg" />
+    <Content Include="Content\images\Recipes_New\apera.jpg" />
+    <Content Include="Content\images\Recipes_New\australian-oyster-blade-roast.jpg" />
+    <Content Include="Content\images\Recipes_New\beef-breakfast-box.jpg" />
+    <Content Include="Content\images\Recipes_New\beef-fried-rice.jpg" />
+    <Content Include="Content\images\Recipes_New\beef-in-xo-sauce.jpg" />
+    <Content Include="Content\images\Recipes_New\beef-madras.jpg" />
+    <Content Include="Content\images\Recipes_New\beef-power-bowl.jpg" />
+    <Content Include="Content\images\Recipes_New\beef-short-rib-sandwichs.jpg" />
+    <Content Include="Content\images\Recipes_New\beef_curry.jpg" />
+    <Content Include="Content\images\Recipes_New\beef_noodlesalad.jpg" />
+    <Content Include="Content\images\Recipes_New\brisket-shu.jpg" />
+    <Content Include="Content\images\Recipes_New\grilled-sirloin.jpg" />
+    <Content Include="Content\images\Recipes_New\japanese-burger-chuck-and-brisket-burger.jpg" />
+    <Content Include="Content\images\Recipes_New\outdoor-wok-rmof.jpg" />
+    <Content Include="Content\images\Recipes_New\ox-tail.jpg" />
+    <Content Include="Content\images\Recipes_New\ribeye.jpg" />
+    <Content Include="Content\images\Recipes_New\rmof---beef-rump-caps.jpg" />
+    <Content Include="Content\images\Recipes_New\rmof---bistecca-florentina.jpg" />
+    <Content Include="Content\images\Recipes_New\rmof---low--slow-beef-short-ribs.jpg" />
+    <Content Include="Content\images\Recipes_New\rmof---woodfired-tomohawks.jpg" />
+    <Content Include="Content\images\Recipes_New\rmt_bahn_mi.jpg" />
+    <Content Include="Content\images\Recipes_New\rmt_rice_paper_rolls.jpg" />
+    <Content Include="Content\images\Recipes_New\rmt_shortribs.jpg" />
+    <Content Include="Content\images\Recipes_New\roasted-tomahawk.jpg" />
+    <Content Include="Content\images\Recipes_New\shin-of-beef.jpg" />
+    <Content Include="Content\images\Recipes_New\sichuan-pepper-beef-noodle.jpg" />
+    <Content Include="Content\images\Recipes_New\steak-sandwich.jpg" />
+    <Content Include="Content\images\Recipes_New\tomahawk.jpg" />
+    <Content Include="Content\images\Recipes_New\yellow-curry.jpg" />
     <Content Include="Content\masterclass.css" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MasterClassController.cs" />
@@ -1244,6 +1322,40 @@
     <Content Include="Content\images\cut-charts\downloads\MLA_CutsChart_Poster_Lamb.pdf" />
     <Content Include="Content\images\cut-charts\downloads\MLA_CutsChart_Poster_Veal.pdf" />
     <Content Include="Content\images\cut-charts\downloads\Veal.pdf" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\PDF%27S\barbequed-flank-steak.pdf" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\PDF%27S\beef-oxtail-minestrone.pdf" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\PDF%27S\braised-brisket-stuffed-arepa.pdf" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\PDF%27S\cambodian-coconut-beef-curry.pdf" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\PDF%27S\corned-beef-silverside.pdf" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\PDF%27S\japanese-short-ribs.pdf" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\PDF%27S\orecchiette-with-tuscan-slow-cooked-shin-of-beef.pdf" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\PDF%27S\outdoor-wok-tossed-vietnamese-carmel-beef.pdf" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\PDF%27S\standing-rib-roast.pdf" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\PDF%27S\the-perfect-steak.pdf" />
+    <Content Include="Content\images\Pro_Tips\Beef_ProTips\PDF%27S\turkish-pulled-brisket-shakshuka.pdf" />
+    <Content Include="Content\images\Pro_Tips\Cuts_ProTips\PDF%27S\msa_lambprimalcuts.pdf" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\PDF%27S\butterflied-lamb-leg.pdf" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\PDF%27S\korean-lamb-ribs.pdf" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\PDF%27S\lamb-larb.pdf" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\PDF%27S\lamb-moussaka.pdf" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\PDF%27S\lamb-neck-ragu.pdf" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\PDF%27S\lamb-rump-salad.pdf" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\PDF%27S\rack-of-lamb-with-lamb-croquettes.pdf" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\PDF%27S\slow-roasted-lamb-shanks.pdf" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\PDF%27S\slow-roasted-mmasterstock-lamb-shoulder.pdf" />
+    <Content Include="Content\images\Pro_Tips\Lamb_ProTips\PDF%27S\tikka-masala-lamb-chops.pdf" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\PDF%27S\barbequed-rump-cap.pdf" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\PDF%27S\bisteccca-florentina.pdf" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\PDF%27S\butterflied-lamb-leg.pdf" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\PDF%27S\chargrilled-beef-tenderloin.pdf" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\PDF%27S\goat-paella.pdf" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\PDF%27S\lamb-arosticini-skewers.pdf" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\PDF%27S\lamb-laham-bajine.pdf" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\PDF%27S\low-and-slow-bbq-beef-short-ribs.pdf" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\PDF%27S\masterstock-lamb-ribs.pdf" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\PDF%27S\outdoor-wok-tossed-vietnamese-carmel-beef.pdf" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\PDF%27S\turkish-lamb-adana-skewers.pdf" />
+    <Content Include="Content\images\Pro_Tips\RedMeat_OverFlames\PDF%27S\wood-fired-tomahawk-steaks.pdf" />
     <None Include="EPiServerLog.config" />
     <Content Include="modules\_protected\Shell\web.config" />
     <Content Include="modules\_protected\Shell\Shell.zip" />
@@ -1264,6 +1376,7 @@
     <Content Include="Views\MC_TravelSolutions\Index.cshtml" />
     <Content Include="Views\MCWOK_Cooking\Index.cshtml" />
     <Content Include="Views\MC_CurriesTagines\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\rmatest - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1289,6 +1402,14 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

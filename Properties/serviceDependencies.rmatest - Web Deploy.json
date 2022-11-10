@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/raremedium/databases/EPiServerDB",
+      "type": "mssql.azure",
+      "connectionId": "EPiServerDB",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}
