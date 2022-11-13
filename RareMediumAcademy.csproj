@@ -323,7 +323,11 @@
     <Compile Include="Controllers\MasterClass_LowSlowController.cs" />
     <Compile Include="Controllers\MCWOK_CookingController.cs" />
     <Compile Include="Controllers\MC_CurriesTaginesController.cs" />
+    <Compile Include="Controllers\MC_GrabNGoController.cs" />
+    <Compile Include="Controllers\MC_GreatSteaksController.cs" />
+    <Compile Include="Controllers\MC_RoastsCarveryController.cs" />
     <Compile Include="Controllers\MC_SummerLambController.cs" />
+    <Compile Include="Controllers\MC_SustainableMenuController.cs" />
     <Compile Include="Controllers\MC_TravelSolutionsController.cs" />
     <Compile Include="Controllers\MeatAustralliaController.cs" />
     <Compile Include="Controllers\ProducerToPlateController.cs" />
@@ -336,7 +340,11 @@
     <Compile Include="Models\Pages\MasterClass_LowSlow.cs" />
     <Compile Include="Models\Pages\MCWOK_Cooking.cs" />
     <Compile Include="Models\Pages\MC_CurriesTagines.cs" />
+    <Compile Include="Models\Pages\MC_GrabNGo.cs" />
+    <Compile Include="Models\Pages\MC_GreatSteaks.cs" />
+    <Compile Include="Models\Pages\MC_RoastsCarvery.cs" />
     <Compile Include="Models\Pages\MC_SummerLamb.cs" />
+    <Compile Include="Models\Pages\MC_SustainableMenu.cs" />
     <Compile Include="Models\Pages\MC_TravelSolutions.cs" />
     <Compile Include="Models\Pages\MeatAustrallia.cs" />
     <Compile Include="Models\Pages\ProducerToPlate.cs" />
@@ -1379,6 +1387,10 @@
     <Content Include="Views\MC_CurriesTagines\Index.cshtml" />
     <None Include="Properties\PublishProfiles\rmatest - Web Deploy.pubxml" />
     <Content Include="rmatest.PublishSettings" />
+    <Content Include="Views\MC_GreatSteaks\Index.cshtml" />
+    <Content Include="Views\MC_RoastsCarvery\Index.cshtml" />
+    <Content Include="Views\MC_GrabNGo\Index.cshtml" />
+    <Content Include="Views\MC_SustainableMenu\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
