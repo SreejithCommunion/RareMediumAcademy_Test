@@ -332,6 +332,12 @@
     <Compile Include="Controllers\MeatAustralliaController.cs" />
     <Compile Include="Controllers\ProducerToPlateController.cs" />
     <Compile Include="Controllers\ProTipsController.cs" />
+    <Compile Include="Controllers\ProTipsListings\Beef_ProTipsController.cs" />
+    <Compile Include="Controllers\ProTipsListings\PTBeef_BBQFlankSteakController.cs" />
+    <Compile Include="Controllers\ProTipsListings\PTBeef_BeefCurryController.cs" />
+    <Compile Include="Controllers\ProTipsListings\PTBeef_JapaneeseShortRibsController.cs" />
+    <Compile Include="Controllers\ProTipsListings\PTBeef_PerfectSteakController.cs" />
+    <Compile Include="Controllers\ProTipsListings\PTBeef_SilverSideController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -349,12 +355,19 @@
     <Compile Include="Models\Pages\MeatAustrallia.cs" />
     <Compile Include="Models\Pages\ProducerToPlate.cs" />
     <Compile Include="Models\Pages\ProTips.cs" />
+    <Compile Include="Models\Pages\ProTipsListings\Beef_ProTips.cs" />
+    <Compile Include="Models\Pages\ProTipsListings\PTBeef_BBQFlankSteak.cs" />
+    <Compile Include="Models\Pages\ProTipsListings\PTBeef_BeefCurry.cs" />
+    <Compile Include="Models\Pages\ProTipsListings\PTBeef_JapaneeseShortRibs.cs" />
+    <Compile Include="Models\Pages\ProTipsListings\PTBeef_PerfectSteak.cs" />
+    <Compile Include="Models\Pages\ProTipsListings\PTBeef_SilverSide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Business\" />
     <Folder Include="Models\Blocks\" />
     <Folder Include="Models\Media\" />
+    <Folder Include="Models\Pages\ProTipsListings\NewFolder1\" />
     <Folder Include="Models\Properties\" />
     <Folder Include="Static\" />
   </ItemGroup>
@@ -1392,6 +1405,12 @@
     <Content Include="Views\MC_RoastsCarvery\Index.cshtml" />
     <Content Include="Views\MC_GrabNGo\Index.cshtml" />
     <Content Include="Views\MC_SustainableMenu\Index.cshtml" />
+    <Content Include="Views\Beef_ProTips\Index.cshtml" />
+    <Content Include="Views\PTBeef_SilverSide\Index.cshtml" />
+    <Content Include="Views\PTBeef_PerfectSteak\Index.cshtml" />
+    <Content Include="Views\PTBeef_JapaneeseShortRibs\Index.cshtml" />
+    <Content Include="Views\PTBeef_BBQFlankSteak\Index.cshtml" />
+    <Content Include="Views\PTBeef_BeefCurry\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
